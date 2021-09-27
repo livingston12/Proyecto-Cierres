@@ -1,0 +1,177 @@
+.header-top{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Surface overlay */
+
+background: rgba(33, 33, 33, 0.08);
+}
+
+.btn-primary{
+    background-color: #26a69a;
+}
+.label-primary{
+    color: #fb8c00  !important;
+}
+.btn-danger{
+    background-color: #f44336 !important;
+}
+.btn-danger:hover{
+    background-color: #fc584d !important;
+}
+.label-green{
+    color:#004d40 !important;
+}
+.label-danger{
+    color: #f44336 !important;
+}
+
+.header-body
+{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 1.75%;
+    bottom: 89.05%;
+background-color: #26a69a;
+
+}; 
+
+.header-icon {
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+}
+
+
+.body-container{
+    position: absolute;
+    top: 12.5%; 
+    bottom: 0%;
+    left: 5%;
+    right: 0%;
+}
+.btn-crear{
+position: absolute;
+left: 4.44%;
+right: 84.44%;
+top:50%;
+bottom: 87.44%;
+color: white;
+border-color: black;
+box-shadow: 5px solid white;
+
+}
+
+.btn-crear:hover
+{    
+    
+    cursor: pointer;
+   
+    
+}
+
+#btn-addClosuser:hover
+{
+  background-color: #57b75b !important;
+}
+
+
+
+.pointer:hover{
+cursor: pointer;  
+border-radius: 5px;
+}
+.edit:hover
+{
+    background-color:#fb8c00 !important;
+    color: white !important;
+}
+
+.delete:hover
+{
+    background-color: #f44336 !important;
+    color: white !important;
+}
+/*From modal styles*/
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 40%;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+  
+  .modal-body {
+    margin: 20px 0;
+  }
+  
+  .modal-default-button {
+    float: right;
+  }
+  
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+  
+  .modal-enter {
+    opacity: 0;
+  }
+  
+  .modal-leave-active {
+    opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  #chart{
+    left: 25%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #chart {
+      left: 0%;
+      width: 50px !important;
+    }
+}
+ 
