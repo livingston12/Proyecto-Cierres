@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Proceso de cierre</title>
+
+    <link rel='stylesheet' type='text/css'  href='/css/main.css'>
+    <link rel='stylesheet' rel="stylesheet"  href='/css/ionicFont.css'>
+    <!--<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel='stylesheet' rel="stylesheet"  href='/css/materialdesignicons.min.css'>
+    <link rel='stylesheet' rel="stylesheet"  href='/css/vuetify.min.css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+   
+    <!--<link rel='stylesheet' type='text/css'  href='/css/materialize.min.css'>-->
+    
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    
+    <script type="text/x-template" id="app-template">
+        <v-app>
+            <header-content></header-content>
+            
+          <v-container class="">
+           
+            <router-view />
+           
+          </v-container>
+        </v-app>
+      </script>
+<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+  
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container"> 
+            
+  
+            <div class="modal-body">
+              <slot name="body">
+                <h5>Are you sure. Do you want to delete it ?  <span class="label-danger"> {{currentname}} </span>?</h5>                
+
+              </slot>
+            </div>
+  
+            <div class="modal-footer">
+              <slot name="footer"> 
+                <v-btn color="success" elevation="2" class="btn modal-default-button" rounded  @click="eliminar_current"> 
+                    SI
+                </v-btn>   
+                <v-btn color="danger" elevation="2" class="btn btn-danger" rounded  @click="$emit('close')">
+                    NO
+                </v-btn>
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </transition>
+    
+
+  </script>
+
+ 
+     
+  
+    
+  
+</head>
+<body>
+ <div id="app">
+  
+ </div> 
+
+<script src="js/vuejs.js"></script>
+
+<script src="js/vuetify.js"></script>
+<script src="js/router.js"></script>
+<script src="js/vuex.js"></script>
+<script src="js/axios/axios.js"></script>
+<script src="js/apexcharts.js"></script>
+<script src="js/vue-apeexcharts.min.js"></script>
+<script src="components/header_content.js"></script>
+<script src="components/clouserConfig.js"></script>
+<script src="components/procesos.js"></script>
+<script src="components/error.js"></script>
+<script src="components/logs.js"></script>
+<script src="components/clousersSet.js"></script>
+<script src="components/Jobs.js"></script>
+<script src='js/main.js'></script>
+
+</body>
+</html>
+
